@@ -82,7 +82,7 @@ console.log("chooseid=", chooseid);
 
 
 // pass attestation id to chain contract
-const PADODemoAddr = '0xC25f43419746b810d97ce0Ab1577a7B65b6D187A';
+const PADODemoAddr = '0x1cEb2a6F52F0bD8dD14B67bBcAdb65E0AdC199A5';
 const abi = [
       'function testVerifyAttestation(bytes32 uid) public view returns (bool)',
       'function testBusiness(bytes32 uid) public returns (bool)'
@@ -91,3 +91,5 @@ let provider = ethers.getDefaultProvider('sepolia');
 const contract = new ethers.Contract(PADODemoAddr, abi, provider);
 const res = await contract.testVerifyAttestation(chooseid, {from: userAddr});
 console.log('res=', res);
+
+process.exit();

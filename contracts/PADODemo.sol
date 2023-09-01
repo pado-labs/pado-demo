@@ -9,8 +9,8 @@ import { Attestation } from "./Common.sol";
 contract PADODemo is Ownable {
     // The global EAS contract.
     IEAS private _eas;
-    address private _PADOAddress;
-    bytes32 private _PADOSchema;
+    address private _PADOAddress; // PADO attester address
+    bytes32 private _PADOSchema; // PADO schema id
 
     bool public result;
 
@@ -30,16 +30,17 @@ contract PADODemo is Ownable {
 
     function testVerifyAttestation(bytes32 uid) public view returns (bool) {
         Attestation memory ats = _eas.getAttestation(uid);
-        if ((Ownable)(ats.attester).owner() != _PADOAddress) {
+        if ((Ownable)(ats.attester).owner() != _PADOAddress) { // checkout attester is PADO
             return false;
         }
-        if (ats.recipient != msg.sender) {
+        if (ats.recipient != msg.sender) { // checkout user address of attestation
             return false;
         }
-        if (ats.schema != _PADOSchema) {
+        if (ats.schema != _PADOSchema) { // check schema id
             return false;
         }
 
+        // check schema content
         (string memory source,bytes32 sourceUseridHash,bytes32 authUseridHash,address recipient,uint64 getDataTime,string memory asset,string memory baseAmount,bool balanceGreaterThanBaseAmount) = abi.decode(ats.data, (string,bytes32,bytes32,address,uint64,string,string,bool));
         if (keccak256(bytes(asset)) != keccak256(bytes("ETH")) || !balanceGreaterThanBaseAmount) {
             return false;
