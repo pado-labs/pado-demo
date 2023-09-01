@@ -16,8 +16,9 @@ Demo main files are [test.js](./scripts/test.js) and [PADODemo.sol](./contracts/
 
 ```shell
 1. git clone git@github.com:pado-labs/pado-demo.git
-2. npm install
-3. node scripts/test.js
+2. cd pado-demo
+3. npm install
+4. node scripts/test.js
 ```
 
 
