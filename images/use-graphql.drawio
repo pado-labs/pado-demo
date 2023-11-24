@@ -1,0 +1,42 @@
+<mxfile host="app.diagrams.net" modified="2023-11-24T05:01:45.701Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="RyTj-8Ib8OChVw9zHd5p" version="22.1.3" type="device">
+  <diagram name="第 1 页" id="Sa4z2ILyl_k865I4MlPp">
+    <mxGraphModel dx="951" dy="559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Mw2zZ1B_3Rd58DC3wRsK-1" value="Dapps" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="70" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw2zZ1B_3Rd58DC3wRsK-2" value="Verax or EAS graphql" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="70" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Mw2zZ1B_3Rd58DC3wRsK-3" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="Mw2zZ1B_3Rd58DC3wRsK-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="390" as="sourcePoint" />
+            <mxPoint x="190" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mw2zZ1B_3Rd58DC3wRsK-4" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="Mw2zZ1B_3Rd58DC3wRsK-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="515" y="390" as="sourcePoint" />
+            <mxPoint x="520" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mw2zZ1B_3Rd58DC3wRsK-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="180" as="sourcePoint" />
+            <mxPoint x="510" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mw2zZ1B_3Rd58DC3wRsK-6" value="1.&amp;nbsp;Query attestations through &lt;br&gt;user address, attester and scheme id, etc.&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mw2zZ1B_3Rd58DC3wRsK-5">
+          <mxGeometry x="-0.6061" y="1" relative="1" as="geometry">
+            <mxPoint x="85" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mw2zZ1B_3Rd58DC3wRsK-7" value="2.&amp;nbsp;Check for attestations that meet the conditions" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
